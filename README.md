@@ -1,12 +1,15 @@
 # Publish-Subscribe Messaging System #
 
 Publisher: 
+
 sends messages (data) to the message queue.
 
 Consumer: 
+
 receives messages (data) from the message queue.
 
 Topic: 
+
 tag, or container with which messages are associated.
 
 # Kafka is built on top of # 
@@ -19,7 +22,9 @@ Apache Spark: cluster-computing framework
 
 # Components #
 
-Topics: a stream of messages belonging to a particular category
+Topics: 
+
+a stream of messages belonging to a particular category
 
 Partition: topics may have many partitions, so it can handle an arbitrary amount of data
 
