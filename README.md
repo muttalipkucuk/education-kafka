@@ -63,7 +63,7 @@ Kafka Brokers
     - partition 3
     - replica 3
 
-*reads data*
+**reads data**
 
 Consumer group
 - consumer 1
