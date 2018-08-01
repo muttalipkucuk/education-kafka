@@ -1,48 +1,40 @@
 # Publish-Subscribe Messaging System #
 
-Publisher: 
+**Publisher:** sends messages (data) to the message queue.
 
-sends messages (data) to the message queue.
+**Consumer:** receives messages (data) from the message queue.
 
-Consumer: 
-
-receives messages (data) from the message queue.
-
-Topic: 
-
-tag, or container with which messages are associated.
+**Topic:** tag, or container with which messages are associated.
 
 # Kafka is built on top of # 
 
-Apache ZooKeeper: synchronization service
+**Apache ZooKeeper:** synchronization service
 
-Apache Storm: event processor
+**Apache Storm:** event processor
 
-Apache Spark: cluster-computing framework
+**Apache Spark:** cluster-computing framework
 
 # Components #
 
-Topics: 
+**Topics:** a stream of messages belonging to a particular category
 
-a stream of messages belonging to a particular category
+**Partition:** topics may have many partitions, so it can handle an arbitrary amount of data
 
-Partition: topics may have many partitions, so it can handle an arbitrary amount of data
+**Partition offset:** each partitioned message has a unique sequence ID called as offset
 
-Partition offset: each partitioned message has a unique sequence ID called as offset
+**Replicas (of partition):** backup of a partition to prevent data loss (no read/write)
 
-Replicas (of partition): backup of a partition to prevent data loss (no read/write)
+**Brokers:** are responsible for maintaing the published data (may have zero or more partitions per topic)
 
-Brokers: are responsible for maintaing the published data (may have zero or more partitions per topic)
+**Kafka Cluster:** when more than one broker
 
-Kafka Cluster: when more than one broker
+**Producers:** publisher of messages to one or more Kafka topics
 
-Producers: publisher of messages to one or more Kafka topics
+**Consumers:** read data from brokers by subscribing to one or more topics and consume published message by pulling data from the brokers.
 
-Consumers: read data from brokers by subscribing to one or more topics and consume published message by pulling data from the brokers.
+**Leader: the node responsible for all reads and writes for the given partition (every partition has one server acting as a leader).
 
-Leader: the node responsible for all reads and writes for the given partition (every partition has one server acting as a leader).
-
-Follower: the node which follows leader instructions
+**Follower: the node which follows leader instructions
 
 # Example #
 
