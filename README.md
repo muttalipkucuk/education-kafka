@@ -1,9 +1,12 @@
+# Publish-Subscribe Messaging System #
+
 Publisher: sends messages (data) to the message queue.
 
 Consumer: receives messages (data) from the message queue.
 
 Topic: tag, or container with which messages are associated.
 
+# Kafka is built on top of # 
 
 Apache ZooKeeper: synchronization service
 
@@ -11,6 +14,7 @@ Apache Storm: event processor
 
 Apache Spark: cluster-computing framework
 
+# Components #
 
 Topics: a stream of messages belonging to a particular category
 
@@ -32,6 +36,7 @@ Leader: the node responsible for all reads and writes for the given partition (e
 
 Follower: the node which follows leader instructions
 
+# Example #
 
 Producers:
 - producer 1
