@@ -41,3 +41,10 @@ Kafka Brokers
   - server 3
     - partition 3
     - replica 3
+
+*reads data*
+
+Consumer group
+- consumer 1
+- consumer 2
+- consumer 3
