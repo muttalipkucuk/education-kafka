@@ -1,21 +1,37 @@
 Publisher: sends messages (data) to the message queue.
+
 Consumer: receives messages (data) from the message queue.
+
 Topic: tag, or container with which messages are associated.
 
+
 Apache ZooKeeper: synchronization service
+
 Apache Storm: event processor
+
 Apache Spark: cluster-computing framework
 
+
 Topics: a stream of messages belonging to a particular category
+
 Partition: topics may have many partitions, so it can handle an arbitrary amount of data
+
 Partition offset: each partitioned message has a unique sequence ID called as offset
+
 Replicas (of partition): backup of a partition to prevent data loss (no read/write)
+
 Brokers: are responsible for maintaing the published data (may have zero or more partitions per topic)
+
 Kafka Cluster: when more than one broker
+
 Producers: publisher of messages to one or more Kafka topics
+
 Consumers: read data from brokers by subscribing to one or more topics and consume published message by pulling data from the brokers.
+
 Leader: the node responsible for all reads and writes for the given partition (every partition has one server acting as a leader).
+
 Follower: the node which follows leader instructions
+
 
 Producers:
 - producer 1
