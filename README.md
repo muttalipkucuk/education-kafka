@@ -42,7 +42,7 @@ Producers:
 - producer 1
 - producer 2
 
-*writes data to*
+**writes data to**
 
 Topics
 - partition 1
