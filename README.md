@@ -1,10 +1,13 @@
 # Publish-Subscribe Messaging System #
 
-Publisher: sends messages (data) to the message queue.
+Publisher: 
+sends messages (data) to the message queue.
 
-Consumer: receives messages (data) from the message queue.
+Consumer: 
+receives messages (data) from the message queue.
 
-Topic: tag, or container with which messages are associated.
+Topic: 
+tag, or container with which messages are associated.
 
 # Kafka is built on top of # 
 
